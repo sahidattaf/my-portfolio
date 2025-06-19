@@ -1,0 +1,110 @@
+/* style.css - Fire-Themed Design by Super Boss 🔥 */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #1a1a1a, #330000);
+  color: #fff3e0;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(90deg, #ff4500, #ff8c00);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero {
+  font-size: 3rem;
+  margin: 0;
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+  0%   { text-shadow: 0 0 5px #ff8c00, 0 0 15px #ff4500; }
+  100% { text-shadow: 0 0 10px #ff6347, 0 0 20px #ff4500; }
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  opacity: 0.95;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #2e1a1a;
+  border: 1px solid #ff5722;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #ff4500;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #ffa726;
+}
+
+.card a {
+  color: #ff7043;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+form {
+  padding-top: 1rem;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff5722;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+footer {
+  background: #1c0f0f;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.95rem;
+  border-top: 1px solid #ff5722;
+}
+
+footer a {
+  color: #ffccbc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
